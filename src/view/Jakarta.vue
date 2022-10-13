@@ -77,7 +77,6 @@
     </tr>
   </tbody>
     </table>
-    <p>Sandy</p>
   </div>
 </template>
 
