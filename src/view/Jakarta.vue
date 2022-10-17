@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="jaBaR">
+    <div class="jaKar">
       <h1>Provinsi DKI Jakarta</h1>
       <img src="../assets/monas.png" alt="">
     </div>
@@ -34,7 +34,6 @@
             <input type="text" v-model="form.image">
           </tr>
           <br />
-          </table>
           <button class="addBtn" type="submit" v-show="!updateSubmit">
             <i class="fas fa-location-arrow"></i>ADD
           </button>
@@ -47,6 +46,7 @@
           >
             Update
           </button>
+          </table>
           <!-- jika tombol edit di klik maka tombol add akan berubah menjadi update -->
         
       </form>
@@ -169,6 +169,10 @@ export default {
         this.jakartas.splice(index, 1);
       });
     },
+    out() {
+      sessionStorage.clear();
+      this.$router.push("/");
+    },
   },
 };
 </script>
@@ -219,14 +223,14 @@ form {
   color: white;
   border-radius: 5px;
 }
-.jaBaR {
+.jaKar {
   display: flex;
   font-size: 30px;
   justify-content: center;
   align-items: center;
   font-family: 'Lobster', cursive;
 }
-.jaBaR img {
+.jaKar img {
   width: 230px;
   height: 300px;
 }

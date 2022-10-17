@@ -2,7 +2,7 @@
     <div class="all">
         <h2>Menu</h2>
         <div class="btn">
-            <router-link to="/">Jakarta</router-link>
+            <router-link to="/jakarta">Jakarta</router-link>
         </div>
         <div class="btn">
             
@@ -33,6 +33,7 @@ export default {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    text-align: center;
 }
 .btn:hover {
     background-color: lightskyblue;

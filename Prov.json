@@ -208,5 +208,31 @@
       "Transportasibali": "-",
       "imagebali": "https://2.bp.blogspot.com/-26t2gEjM5qg/W9AZYQ9g4tI/AAAAAAAAY40/R7GXnvTXe7Y6p-Tw66Jguxp72OxHkn7vwCLcBGAs/s1600/puputan_1b.jpg"
     }
+  ],
+  "akuns": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "username": "Sandi putra",
+      "password": "sandyptr",
+      "role": "Siswa",
+      "id": 2
+    },
+    {
+      "username": "User",
+      "password": "NewPlayer",
+      "role": "Siswa",
+      "id": 3
+    },
+    {
+      "username": "trg",
+      "password": "sgvrrgv",
+      "role": "Siswa",
+      "id": 4
+    }
   ]
 }

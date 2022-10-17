@@ -6,11 +6,24 @@ import Jatim from "../view/Jatim.vue";
 import Bali from "../view/Bali.vue";
 import Vue from "vue";
 import Router from "vue-router";
+import Login from "../components/Login.vue";
+import Register from "../components/Register.vue";
+
 
 Vue.use(Router)
 const routes = [
     {
         path: "/",
+        name: "LoginPage",
+        component: Login
+    },
+    {
+        path: "/register",
+        name: "RegisterPage",
+        component: Register
+    },
+    {
+        path: "/jakarta",
         name: "jakarta",
         component: Jakarta,
     },

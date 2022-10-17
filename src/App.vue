@@ -1,11 +1,11 @@
 <template>
 <div>     
-   <Header />
+   <Header v-if="navbar"/>
   <div class="app">
     <div class="navbar">
-    <NavProv />
+    <NavProv v-if="navbar"/>
     </div>
-    <router-view />
+    <router-view @toggleBar="() => (navbar = !navbar)"/>
     </div>
 </div>
 </template>
@@ -19,6 +19,11 @@ export default {
   components: {
    NavProv,
    Header
+  },
+  data () {
+    return {
+      navbar: true,
+    }
   }
 }
 </script>
@@ -29,14 +34,14 @@ export default {
 }
 .navbar {
   background-color: gray;
-  color: white;
+  /* color: white; */
   line-height: 5;
   height: 450px;
   position: fixed;
    text-align: center;
     width: 150px;
     margin-left: 20px;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 20px;
 }
 </style>

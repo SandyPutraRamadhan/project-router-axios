@@ -34,7 +34,6 @@
             <input type="text" v-model="form.imagejabar">
           </tr>
           <br />
-          </table>
           <button class="addBtn" type="submit" v-show="!updateSubmit">
             <i class="fas fa-location-arrow"></i>ADD
           </button>
@@ -49,6 +48,7 @@
           </button>
           <!-- jika tombol edit di klik maka tombol add akan berubah menjadi update -->
         
+          </table>
       </form>
       <br />
     </div>
